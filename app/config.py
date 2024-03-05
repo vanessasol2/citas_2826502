@@ -1,4 +1,8 @@
+import os
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+
 class Config: 
-    SQLALCHEMY_DATABASE_URI='mysql+pymysql://root:@localhost/cita_2826502'#Cadena de conexion
+    SQLALCHEMY_DATABASE_URI='sqlite:///' + os.path.join(basedir, 'database.db')
     SQLALCHEMY_TRACK_NOTIFICATIONS=True
     
