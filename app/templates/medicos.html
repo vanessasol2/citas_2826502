@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Medicos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <h1> Lista de Medicos Zz</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Tipo de identificación</th>
+                <th>numero de identificación</th>
+                <th>numero de registro|</th>
+                <th>especialidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for medico in medicos %}
+                <tr>
+                    <td> {{ medico.nombre }} </td>
+                    <td> {{ medico.apellido }} </td>
+                    <td> {{ medico.tipo_identificacion }} </td>
+                    <td> {{ medico.numero_identificacion }} </td>
+                    <td> {{ medico.registro_medico }} </td>
+                    <td> {{ medico.especialidad }} </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+</html>
