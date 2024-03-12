@@ -19,6 +19,7 @@
                 <th>numero de identificación</th>
                 <th>altura</th>
                 <th>tipo_sangre</th>
+                <th>Ver detalles</th>
             </tr>
         </thead>
         <tbody>
@@ -30,6 +31,11 @@
                     <td> {{ paciente.numero_identificacion }} </td>
                     <td> {{ paciente.altura }} </td>
                     <td> {{ paciente.tipo_sangre }} </td>
+                    <td>
+                        <a href="/pacientes/{{ paciente.id }}">
+                            Ver Detalles
+                        </a>
+                    </td>
                 </tr>
             {% endfor %}
         </tbody>
