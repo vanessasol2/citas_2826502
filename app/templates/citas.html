@@ -8,16 +8,18 @@
 
 </head>
 <body>
-    <h1> Lista de citas</h1>
+    <div class="container">
+    <h1 class="text-center"> Lista de citas</h1>
 
-    <table class="table table-dark">
-        <thead>
+    <table class="table table-dark table-striped-columns mt-4">
+        <thead  class="table table-info table-striped-columns">
             <tr>
                 <th>Fecha</th>
                 <th>Paciente</th>
                 <th>Medico</th>
                 <th>Consultorio</th>
                 <th>Valor</th>
+                <th>Ver detalles</th>
             </tr>
         </thead>
         <tbody>
@@ -28,10 +30,16 @@
                     <td> {{ cita.medico.nombre }} </td>
                     <td> {{ cita.consultorio.numero }} </td>
                     <td> {{ cita.valor }} </td>
+                    <td>
+                        <a href="/citas/{{ cita.id }}">
+                            Ver Detalles
+                        </a>
+                    </td>
                 </tr>
             {% endfor %}
         </tbody>
         <tfoot></tfoot>
     </table>
+    </div>
 </body>
 </html>

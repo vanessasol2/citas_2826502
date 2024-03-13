@@ -16,14 +16,14 @@
                     <p> Nombre: <input type="text" class="form-control" placeholder="Name" aria-label name="nombre"  /></p> 
                 </div>
                 <div class="col-6 ">
-                    <p> Apellidos: <input type="text" class="form-control" placeholder="Last name" aria-label name="apellidos"  /></p>
+                    <p> Apellidos: <input type="text" class="form-control" placeholder="Last name" aria-label name="apellido"  /></p>
                 </div>
                 <div class="col-6 ">
                     <p> Tipo de identificacion:
                         <select class="form-select" aria-label="Default select example" name="ti">
                             <option selected>Abrir este menú de selección </option>
-                            <option value="1">TI</option>
-                            <option  value="2">CC</option>
+                            <option value="TI">TI</option>
+                            <option  value="CC">CC</option>
                         </select>
                     </p>
                 </div>
@@ -52,9 +52,10 @@
         <div class="container  text-center">
         <div class="col-12  mt-4">
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <button type="button" class="btn btn-success">
-            Guardar
-        </button>
+                <button class="btn btn-success me-md-2" type="submit" class="btn-enviar" >
+                    Guardar
+                </button>
+            </div>
         </div>
         </div>
     </form>
